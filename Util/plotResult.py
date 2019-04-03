@@ -25,8 +25,6 @@ with open(progress_filename, newline='') as csvfile:
             for j in range(len(row)):
                 category_idx_lookup[row[j]] = j
                 data_lookup[j] = []
-            # category_idx_lookup['Iteration'] = len(row)
-            # data_lookup[len(row)] = []
             continue
         if row:
             for j in range(len(row)):
@@ -48,41 +46,30 @@ def plot_progress():
     indices = [i for i, x in enumerate(EpisodesSofar) if x == 0]
 
     AverageReturns = np.array(data_lookup[category_idx_lookup['EpRewMean']])
-    EpRNoveltyRewMean = np.array(data_lookup[category_idx_lookup['EpRNoveltyRewMean']])
-    RelativeDirection = np.array(data_lookup[category_idx_lookup['RelativeDirection']])
     # TaskGradientMag = np.array(data_lookup[category_idx_lookup['TaskGradMag']])
     # NoveltyGradientMag = np.array(data_lookup[category_idx_lookup['NoveltyGradMag']])
     # MaxReturns = data_lookup[category_idx_lookup['MaxReturn']]
     # MinReturns = data_lookup[category_idx_lookup['MinReturn']]
-    fig, axs = plot.subplots(2, 1)
+    fig, axs = plot.subplots(1, 1)
     # plot.figure()
     # print(AverageReturns)
-    axs[0].plot(ItersSofar, AverageReturns, 'r', label='Average Return')
+    axs.plot(ItersSofar, AverageReturns, 'r', label='Average Return')
 
     # plot.plot(Iterations[begin:end], MinReturns[begin:end], 'g', label='Minimum Return')
     # plot.plot(Iterations[begin:end], MaxReturns[begin:end], 'b', label='Maximum Return')
-    axs[0].set_xlabel('Iterations')
-    axs[0].set_ylabel('Expected Return')
+    axs.set_xlabel('Iterations')
+    axs.set_ylabel('Expected Return')
     # plot.title('Mirror Enforcement Larger Loss')
     # plot.yscale('symlog')
-    axs[0].legend()
-    axs[0].set_yscale('linear')
-    axs[0].set_xscale('linear')
+    axs.legend()
+    axs.set_yscale('linear')
+    axs.set_xscale('linear')
 
     # plot.savefig(snapshot_dir + '/TaskReturnTrainingCurve' + '.jpg')
     # plot.show()
     #
     # plot.figure()
 
-    axs[1].plot(ItersSofar, EpRNoveltyRewMean, 'b', label='Average Novelty Return')
-
-    axs[1].set_xlabel('Iterations')
-    axs[1].set_ylabel('Expected Return')
-
-    axs[1].legend()
-    # axs[1].set_yscale('symlog', linthreshy=1e-5)
-    axs[1].set_yscale('linear')
-    axs[1].set_xscale('linear')
 
     # plot.legend()
     fig.tight_layout()
@@ -91,19 +78,6 @@ def plot_progress():
 
     plot.show()
 
-    plot.figure()
-
-    plot.hist(RelativeDirection, stacked=True, bins=30)
-    plot.xlabel('Relative Directions')
-    plot.ylabel('Probability')
-
-    plot.legend()
-    plot.yscale('linear')
-    plot.xscale('linear')
-    # plot.legend()
-    plot.savefig(snapshot_dir + '/relative_direction_prob' + '.jpg')
-
-    plot.show()
     #
     # plot.figure()
     #

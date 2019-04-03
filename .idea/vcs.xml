@@ -2,5 +2,10 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sac" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/taichi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/taichi/assets" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/taichi/external/glfw" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/taichi/external/lib" vcs="Git" />
   </component>
 </project>

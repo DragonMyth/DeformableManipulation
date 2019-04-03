@@ -22,7 +22,7 @@ from baselines import bench as bc
 from baselines import logger
 
 import tensorflow as tf
-from baselines.ppo1 import mlp_policy, mlp_policy_novelty, mlp_policy_mirror_novelty
+from baselines.ppo1 import mlp_policy, mlp_policy_novelty, mlp_policy_mirror_novelty, cnn_policy_carving
 import baselines.common.tf_util as U
 
 import itertools
@@ -31,10 +31,21 @@ from gym import wrappers
 import seaborn as sns
 
 
-def policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
-    return mlp_policy_novelty.MlpPolicyNovelty(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=64,
-                                               num_hid_layers=3,
+# def policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+#     return mlp_policy_novelty.MlpPolicyNovelty(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=64,
+#                                                num_hid_layers=3,
+#                                                )
+
+
+def cnn_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+    return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space
                                                )
+
+
+def policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+    return mlp_policy.MlpPolicy(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=256,
+                                num_hid_layers=2,
+                                )
 
 
 def mirror_turtle_policy_fn(name, ob_space, ac_space):
@@ -106,7 +117,7 @@ def perform_rollout(policy,
         predefined_actions = joblib.load(saved_rollout_path)['actions']
     # print(predefined_actions)
     all_reward_info = []
-
+    env.seed(42)
     for _ in range(num_repeat):
 
         path = {'observations': [], 'actions': []}
@@ -131,50 +142,21 @@ def perform_rollout(policy,
             if policy is None:
                 action_taken = (np.random.rand(env.unwrapped.act_dim) - 0.5 * np.ones(
                     env.unwrapped.act_dim)) * 2
+                # action_taken = np.array([0, 0, 0,-1])
+
+                # action_taken = np.array([0, 0, np.random.rand(1)-0.5,np.random.rand(1)-0.5])*2
             else:
                 if i % control_step_skip == 0:
-
-                    # observation_permutation = [0, 1, 2, 3, 4, 9, 10, 11, 12,
-                    #                            5, 6, 7, 8, 17, 18, 19, 20, 13,
-                    #                            14, 15, 16]
-                    #
-                    # action_permutation = [4, 5, 6, 7, 0, 1, 2, 3]
-                    # obs_perm_mat = np.zeros((len(observation_permutation), len(observation_permutation)),
-                    #                         dtype=np.float32)
-                    # act_perm_mat = np.zeros((len(action_permutation), len(action_permutation)), dtype=np.float32)
-                    #
-                    # for k, perm in enumerate(observation_permutation):
-                    #     obs_perm_mat[k][perm] = 1
-                    #
-                    # for k, perm in enumerate(action_permutation):
-                    #     act_perm_mat[k][perm] = 1
-                    #
-                    # mirr_obs = np.dot(observation, obs_perm_mat)
-                    #
-                    # orig_mean = policy._orig_mean(observation)
-                    # mirr_mean = policy._mirr_mean(observation)
-                    # mirr_obs_mean = policy._mirr_obs_mean(observation)
-                    # means_1 = (orig_mean, mirr_mean,mirr_obs_mean)
-                    # orig_mean_2 = policy._orig_mean(mirr_obs)
-                    # mirr_mean_2 = policy._mirr_mean(mirr_obs)
-                    # mirr_obs_mean_2 = policy._mirr_obs_mean(mirr_obs)
-                    #
-                    # means_2 = (orig_mean_2, mirr_mean_2,mirr_obs_mean_2)
-                    # action_taken_1 = policy.act(False, observation)[0]
-                    # action_taken_2 = policy.act(False, mirr_obs)[0]
-
                     action_taken = policy.act(stochastic, observation)[0]
                     last_action = action_taken
                 else:
                     action_taken = last_action
             if animate:
                 if (policy is not None):
-                    # log_std = policy.log_std()
+                    log_std = policy.log_std()
+                    # print(log_std)
 
-                    std = policy.log_std(observation)[0]
-
-                    # print("std is: ", std)
-                    # print("Action taken is: ", action_taken)
+            #         std = policy.log_std(observation)[0]
             if predefined_actions:
                 action_taken = predefined_actions[i][::-1]
             # print("MAX: ",np.max(action_taken),"MIN: ", np.min(action_taken))
@@ -240,39 +222,39 @@ def perform_rollout(policy,
 
         plot.figure()
 
-        actionArr = np.array(data_list['actions'])
-        plot.title('Torque changes along time')
-        norm = matplotlib.colors.SymLogNorm(np.min(abs(actionArr)), linscale=np.min(abs(actionArr)))
-        plot.imshow(actionArr.transpose(), norm=norm, aspect='auto')
-        plot.gray()
-        plot.colorbar()
-
-        plot.xlabel('Time Steps')
-        plot.ylabel('Dofs')
-        plot.legend()
-        plot.savefig(snapshot_dir + '/torqueDecomposition.jpg')
-
+        # actionArr = np.array(data_list['actions'])
+        # plot.title('Torque changes along time')
+        # norm = matplotlib.colors.SymLogNorm(np.min(abs(actionArr)), linscale=np.min(abs(actionArr)))
+        # plot.imshow(actionArr.transpose(), norm=norm, aspect='auto')
+        # plot.gray()
+        # plot.colorbar()
+        #
+        # plot.xlabel('Time Steps')
+        # plot.ylabel('Dofs')
+        # plot.legend()
+        # plot.savefig(snapshot_dir + '/torqueDecomposition.jpg')
+        #
         plot.show()
-
-        plot.figure()
-        plot.title('State Vec changes along time')
-        statesArr = np.array(data_list['states'])
-
-        # norm = matplotlib.colors.SymLogNorm(np.min(abs(statesArr)), linscale=np.min(abs(statesArr)))
-        norm = matplotlib.colors.Normalize(-np.pi, np.pi)
-
-        plot.imshow(statesArr.transpose(), norm=norm, aspect='auto')
-        plot.gray()
-        plot.colorbar()
-
-        # plot.grid(True)
-
-        plot.xlabel('Time Steps')
-        plot.ylabel('Dofs')
-        plot.legend()
-        plot.savefig(snapshot_dir + '/stateDecomposition.jpg')
-
-        plot.show()
+        #
+        # plot.figure()
+        # plot.title('State Vec changes along time')
+        # statesArr = np.array(data_list['states'])
+        #
+        # # norm = matplotlib.colors.SymLogNorm(np.min(abs(statesArr)), linscale=np.min(abs(statesArr)))
+        # norm = matplotlib.colors.Normalize(-np.pi, np.pi)
+        #
+        # plot.imshow(statesArr.transpose(), norm=norm, aspect='auto')
+        # plot.gray()
+        # plot.colorbar()
+        #
+        # # plot.grid(True)
+        #
+        # plot.xlabel('Time Steps')
+        # plot.ylabel('Dofs')
+        # plot.legend()
+        # plot.savefig(snapshot_dir + '/stateDecomposition.jpg')
+        #
+        # plot.show()
 
     return path
 
@@ -444,7 +426,7 @@ def render_policy(env_name, action_skip=1, save_path=False, save_filename="path_
                 if not stoch:
                     num_runs = 1
                 for r in range(num_runs):
-                    path = perform_rollout(pi, env, snapshot_dir=snapshot_dir, animate=True, plot_result=False,
+                    path = perform_rollout(pi, env, snapshot_dir=snapshot_dir, animate=True, plot_result=True,
                                            stochastic=stoch,
                                            control_step_skip=action_skip,
                                            saved_rollout_path=None,
@@ -582,7 +564,7 @@ def plot_path_data(path_dir=None, save_dir=None):
             if not save_dir:
                 # plot.show()
                 import os
-                lalal=os.path.dirname(file)+'/plots/'+str(f)
+                lalal = os.path.dirname(file) + '/plots/' + str(f)
                 print(lalal)
                 plot.savefig(lalal)
             else:
