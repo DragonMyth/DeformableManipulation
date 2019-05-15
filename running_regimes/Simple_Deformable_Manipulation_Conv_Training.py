@@ -11,6 +11,8 @@ import tensorflow as tf
 import multiprocessing
 from keras.models import load_model
 
+import scipy.stats
+
 
 def callback(localv, globalv):
     iters_so_far = localv['iters_so_far']
@@ -30,8 +32,9 @@ def callback(localv, globalv):
             joblib.dump(save_dict, save_dir + '/policy_params_' + str(iters_so_far) + '.pkl', compress=True)
 
 
-def train(sess, env_id, num_timesteps, timesteps_per_actor, seed):
-    from baselines.ppo1 import cnn_policy_carving, pposgd_simple
+def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
+    from baselines.ppo1 import cnn_policy_carving, pposgd_simple, cnn_policy_carving_two_maps, \
+        cnn_policy_carving_explicit_target
 
     rank = MPI.COMM_WORLD.Get_rank()
 
@@ -41,7 +44,9 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed):
     env = gym.make(env_id)
 
     def policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
-        return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
+        # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
+        return cnn_policy_carving_explicit_target.CnnPolicyCarvingExplicitTarget(name=name, ob_space=ob_space,
+                                                                                 ac_space=ac_space)
 
     env = bench.Monitor(env, logger.get_dir() and
                         osp.join(logger.get_dir(), str(rank)))
@@ -52,14 +57,16 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed):
                                 max_timesteps=num_timesteps,
                                 timesteps_per_actorbatch=timesteps_per_actor,
                                 clip_param=0.2, entcoeff=0,
-                                optim_epochs=10, optim_stepsize=1e-3, optim_batchsize=64,
+                                optim_epochs=10, optim_stepsize=3e-4, optim_batchsize=64,
                                 gamma=0.99, lam=0.95,
                                 schedule='linear',
                                 callback=callback,
                                 # Following params are kwargs
                                 session=sess,
                                 gap=5,
+                                restore=None,  # [sess, policy_param]
                                 )
+
     env.close()
     return model
 
@@ -81,10 +88,13 @@ def main(env_name, seed, run_num, data_saving_path, batch_size_per_process, num_
         logger.reset()
         logger.configure(data_saving_path)
 
+        # filename = '/Users/dragonmyth/Documents/CS/DeformableManipulation/data/local/conv_policy_match_center_circle/ppo_SimplerParticleCarving-v2_run_0/policy/policy_params_500.pkl'
+        # policy_param = joblib.load(filename)
+
         model = train(sess, env_name,
                       num_timesteps=num_iterations_enforce * num_processes * num_timesteps_per_process,
                       timesteps_per_actor=num_timesteps_per_process,
-                      seed=seed)
+                      seed=seed, policy_param=None)
 
         if mpi_rank == 0:
             env = gym.make(env_name)
@@ -116,7 +126,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('--env', help='environment ID', default='SimplerParticleCarving-v1')
+    parser.add_argument('--env', help='environment ID', default='SimplerParticleCarving-v2')
     parser.add_argument('--seed', help='RNG seed', type=int, default=0)
     parser.add_argument('--curr_run', help='Current number of runs in the sequence', default=2)
     parser.add_argument('--data_saving_path', help='Directory for saving the log files for this run')

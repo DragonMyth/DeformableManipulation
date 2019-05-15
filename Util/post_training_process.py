@@ -22,7 +22,8 @@ from baselines import bench as bc
 from baselines import logger
 
 import tensorflow as tf
-from baselines.ppo1 import mlp_policy, mlp_policy_novelty, mlp_policy_mirror_novelty, cnn_policy_carving
+from baselines.ppo1 import mlp_policy, mlp_policy_novelty, mlp_policy_mirror_novelty, cnn_policy_carving, \
+    cnn_policy_carving_two_maps, cnn_policy_carving_explicit_target
 import baselines.common.tf_util as U
 
 import itertools
@@ -35,6 +36,16 @@ import seaborn as sns
 #     return mlp_policy_novelty.MlpPolicyNovelty(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=64,
 #                                                num_hid_layers=3,
 #                                                )
+
+def cnn_template_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+    return cnn_policy_carving_two_maps.CnnPolicyCarvingTwoMaps(name=name, ob_space=ob_space, ac_space=ac_space
+                                                               )
+
+
+def cnn_explicity_target_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+    return cnn_policy_carving_explicit_target.CnnPolicyCarvingExplicitTarget(name=name, ob_space=ob_space,
+                                                                             ac_space=ac_space
+                                                                             )
 
 
 def cnn_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
@@ -140,9 +151,9 @@ def perform_rollout(policy,
             if animate:
                 env.render()
             if policy is None:
-                action_taken = (np.random.rand(env.unwrapped.act_dim) - 0.5 * np.ones(
-                    env.unwrapped.act_dim)) * 2
-                # action_taken = np.array([0, 0, 0,-1])
+                # action_taken = (np.random.rand(env.unwrapped.act_dim) - 0.5 * np.ones(
+                #     env.unwrapped.act_dim)) * 2
+                action_taken = np.array([0, 0, -1, 0])
 
                 # action_taken = np.array([0, 0, np.random.rand(1)-0.5,np.random.rand(1)-0.5])*2
             else:
