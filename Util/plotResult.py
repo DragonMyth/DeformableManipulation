@@ -5,13 +5,14 @@ import numpy as np
 from tkinter.filedialog import askopenfilename
 from tkinter.filedialog import askdirectory
 import joblib
-
+import tkinter
+root = tkinter.Tk()
 openFileOption = {}
 openFileOption['initialdir'] = './data/local/experiment'
 
 # filename = askopenfilename(**openFileOption)
 directory = askdirectory(**openFileOption)
-
+root.update()
 snapshot_dir = directory  # filename[0:filename.rfind('/') + 1]
 category_idx_lookup = dict()
 data_lookup = dict()
@@ -78,24 +79,6 @@ def plot_progress():
 
     plot.show()
 
-    #
-    # plot.figure()
-    #
-    # plot.plot(ItersSofar, TaskGradientMag, 'r', label='Task Gradient Magnitudes')
-    # plot.plot(ItersSofar, NoveltyGradientMag, 'b', label='Novelty Gradient Magnitudes')
-    #
-    # plot.xlabel('Iterations')
-    # plot.ylabel('Gradient Magnitudes')
-    #
-    # plot.legend()
-    # plot.yscale('linear')
-    # plot.xscale('linear')
-    # plot.legend()
-    # plot.savefig(snapshot_dir + '/gradient_magnitudes' + '.jpg')
-    #
-    # plot.show()
-
-
 def plot_gradient():
     task_gradients = gradient_info['task_gradients']
     novelty_gradients = gradient_info['novelty_gradients']
@@ -104,7 +87,6 @@ def plot_gradient():
     task_gradients_normalized = task_gradients / np.linalg.norm(task_gradients, axis=1, keepdims=True)
     novelty_gradients_normalized = novelty_gradients / np.linalg.norm(novelty_gradients, axis=1, keepdims=True)
 
-    #
     dot_products = np.zeros(len(task_gradients))
     for i in range(len(task_gradients)):
         task_norm = task_gradients[i] / np.linalg.norm(task_gradients[i])
@@ -154,3 +136,4 @@ def plot_gradient():
 
 plot_progress()
 # plot_gradient()
+
