@@ -33,7 +33,7 @@ def callback(localv, globalv):
 
 
 def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
-    from baselines.ppo1 import pposgd_simple_flex, cnn_policy_granular_sweep, cnn_policy_granular_sweep_explicit_target
+    from baselines.ppo1 import pposgd_simple_flex, cnn_policy_granular_sweep, cnn_policy_granular_sweep_explicit_target,cnn_policy_granular_sweep_voxel_bar
 
     rank = MPI.COMM_WORLD.Get_rank()
 
@@ -44,8 +44,10 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
 
     def policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
         # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
-        return cnn_policy_granular_sweep_explicit_target.CnnPolicyGranularSweepExplicitTarget(name=name, ob_space=ob_space,
-                                                                                 ac_space=ac_space)
+        # return cnn_policy_granular_sweep_explicit_target.CnnPolicyGranularSweepExplicitTarget(name=name, ob_space=ob_space,
+        #                                                                          ac_space=ac_space)
+        return cnn_policy_granular_sweep_voxel_bar.CnnPolicyGranularSweepVoxelBar(name=name, ob_space=ob_space,
+                                                                                  ac_space=ac_space)
 
     env = bench.Monitor(env, logger.get_dir() and
                         osp.join(logger.get_dir(), str(rank)))
@@ -123,7 +125,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v0')
+    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v1')
     parser.add_argument('--seed', help='RNG seed', type=int, default=0)
     parser.add_argument('--data_saving_path', help='Directory for saving the log files for this run')
     parser.add_argument('--batch_size_per_process',

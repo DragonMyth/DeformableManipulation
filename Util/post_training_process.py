@@ -23,7 +23,7 @@ from baselines import logger
 
 import tensorflow as tf
 from baselines.ppo1 import mlp_policy, cnn_policy_carving, \
-    cnn_policy_carving_two_maps, cnn_policy_carving_explicit_target,cnn_policy_granular_sweep,cnn_policy_granular_sweep_explicit_target
+    cnn_policy_carving_two_maps, cnn_policy_carving_explicit_target,cnn_policy_granular_sweep,cnn_policy_granular_sweep_explicit_target,cnn_policy_granular_sweep_voxel_bar
 import baselines.common.tf_util as U
 
 import itertools
@@ -35,7 +35,13 @@ import seaborn as sns
 # def policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
 #     return mlp_policy_novelty.MlpPolicyNovelty(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=64,
 #                                                num_hid_layers=3,
+
 #                                                )
+def cnn_granular_sweep_voxel_bar_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+    # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
+    return cnn_policy_granular_sweep_voxel_bar.CnnPolicyGranularSweepVoxelBar(name=name, ob_space=ob_space,
+                                                            ac_space=ac_space)
+
 def cnn_granular_sweep_explicit_target_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
     # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
     return cnn_policy_granular_sweep_explicit_target.CnnPolicyGranularSweepExplicitTarget(name=name, ob_space=ob_space,
