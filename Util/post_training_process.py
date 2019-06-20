@@ -107,7 +107,11 @@ def perform_rollout(policy,
             if hasattr(env.env, 'disableViewer'):
                 env.env.disableViewer = False
             if record:
-                env = wrappers.Monitor(env, snapshot_dir + '/../policy_runs', force=True)
+                env.unwrapped.save_video = True
+                env.unwrapped.video_path = snapshot_dir + '/../policy_runs'
+                import os
+                if not os.path.exists(env.unwrapped.video_path):
+                    os.makedirs(env.unwrapped.video_path)
 
         observation = env.reset()
 
