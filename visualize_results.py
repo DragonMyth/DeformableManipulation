@@ -33,7 +33,12 @@ def render_simple_particle_carving_circle_matching_explicit_circle():
 def render_flex_granular_sweep():
     # render_policy("FlexGranularSweep-v0",stoch=False,record=False,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_explicit_target_policy_fn,save_filename="data/trajs/curr_1_granular.pkl")
     # render_policy("FlexGranularSweep-v0",stoch=False,record=False,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_policy_fn,save_filename="data/trajs/no_target_granular.pkl")
-    render_policy("FlexGranularSweep-v1",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_explicit_target_policy_fn,save_filename="data/trajs/granular_voxel_bar.pkl")
+
+    #file_name = "data/trajs/granular_voxel_bar_two_goal.pkl"
+    #file_name = "data/trajs/granular_voxel_bar_goal_density.pkl"
+    file_name = "data/trajs/granular_voxel_bar_goal_density_diff.pkl"
+
+    render_policy("FlexGranularSweep-v1",stoch=False,record=False,random_policy=True,save_path=True,policy_func=cnn_granular_sweep_voxel_bar_policy_fn,save_filename=file_name)
 
 # render_reacher()
 # render_simple_particle_carving()
