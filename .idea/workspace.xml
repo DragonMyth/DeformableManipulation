@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15366b57-bba2-4a95-8c54-0a4dbae9f6ad" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/flex_trajectory_vis-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/flex_trajectory_vis-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Util/post_training_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/Util/post_training_process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flex_trajectory_vis.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/flex_trajectory_vis.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/running_regimes/Granular_Sweep_Training.py" beforeDir="false" afterPath="$PROJECT_DIR$/running_regimes/Granular_Sweep_Training.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualize_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize_results.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,15 +22,36 @@
     <SUITE FILE_PATH="coverage/DeformableManipulation$granular_sweep_env.coverage" NAME="granular_sweep_env Coverage Results" MODIFIED="1559163830278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex" />
     <SUITE FILE_PATH="coverage/DeformableManipulation$Granular_Sweep_Training.coverage" NAME="Granular_Sweep_Training Coverage Results" MODIFIED="1560011894359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running_regimes" />
     <SUITE FILE_PATH="coverage/DeformableManipulation$run_atari.coverage" NAME="run_atari Coverage Results" MODIFIED="1551121741172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../baselines/baselines/ppo1" />
-    <SUITE FILE_PATH="coverage/DeformableManipulation$visualize_results.coverage" NAME="visualize_results Coverage Results" MODIFIED="1560010031778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$visualize_results.coverage" NAME="visualize_results Coverage Results" MODIFIED="1560902688728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_voxel_bar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="62" column="57" lean-forward="true" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+            <state relative-caret-position="309">
+              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="606" column="24" selection-start-line="606" selection-start-column="24" selection-end-line="606" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#24#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -41,31 +59,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="64" column="58" lean-forward="true" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+            <state relative-caret-position="191">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <folding>
-                <element signature="e#0#74#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -79,23 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/visualize_results.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_carving_two_maps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="39" column="84" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -103,8 +89,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-510">
-              <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
+            <state relative-caret-position="388">
+              <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -118,7 +104,7 @@
         <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/flex_env.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="825">
-              <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+              <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -217,22 +203,22 @@
         <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_carving_explicit_target.py" />
         <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep.py" />
         <option value="$PROJECT_DIR$/Util/plotResult.py" />
-        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py" />
         <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/__init__.py" />
-        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/__init__.py" />
         <option value="$PROJECT_DIR$/Util/post_training_process.py" />
-        <option value="$PROJECT_DIR$/visualize_results.py" />
-        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py" />
         <option value="$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py" />
         <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_explicit_target.py" />
         <option value="$PROJECT_DIR$/running_regimes/Granular_Sweep_Training.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/__init__.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py" />
         <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_voxel_bar.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py" />
+        <option value="$PROJECT_DIR$/visualize_results.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="375" />
-    <option name="y" value="189" />
+    <option name="x" value="399" />
+    <option name="y" value="32" />
     <option name="width" value="1035" />
     <option name="height" value="1018" />
   </component>
@@ -437,7 +423,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Granular_Sweep_Training">
+  <component name="RunManager" selected="Python.visualize_results">
     <configuration name="DeformableManipulation" type="JupiterNotebook" factoryName="Jupyter Notebook">
       <module name="DeformableManipulation" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -586,10 +572,10 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Granular_Sweep_Training" />
         <item itemvalue="Python.visualize_results" />
-        <item itemvalue="Python.granular_sweep_voxel_bar_env" />
         <item itemvalue="Python.plotResult" />
+        <item itemvalue="Python.Granular_Sweep_Training" />
+        <item itemvalue="Python.granular_sweep_voxel_bar_env" />
         <item itemvalue="Python.granular_sweep_env" />
       </list>
     </recent_temporary>
@@ -624,12 +610,12 @@
       <workItem from="1557077773194" duration="4571000" />
       <workItem from="1557179748319" duration="5278000" />
       <workItem from="1557417299789" duration="17518000" />
-      <workItem from="1557944173301" duration="100809000" />
+      <workItem from="1557944173301" duration="122715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="361069000" />
+    <option name="totallyTimeSpent" value="382975000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -644,12 +630,12 @@
     <frame x="65" y="-4" width="1615" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49920255" visible="true" weight="0.31548756" />
-      <window_info id="Structure" order="1" sideWeight="0.50079745" side_tool="true" weight="0.26855347" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.31548756" />
+      <window_info id="Structure" order="1" sideWeight="0.5016077" side_tool="true" weight="0.31548756" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32901832" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32901832" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.399137" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -659,12 +645,12 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32901832" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32901832" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32941177" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.83253586" visible="true" weight="0.12300829" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.83253586" visible="true" weight="0.16443595" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
       <window_info anchor="right" x="0" y="0" width="358" height="827" id="Documentation" order="6" sideWeight="0.16746412" side_tool="true" visible="true" weight="0.19095477" />
@@ -738,13 +724,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py</url>
-          <line>43</line>
+          <line>45</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py</url>
           <line>31</line>
           <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py</url>
+          <line>65</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py</url>
+          <line>64</line>
+          <option name="timeStamp" value="86" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -786,6 +782,31 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
+        <expression-string>np.sum(densities*goals,axis=1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>densities*goals</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>goals.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>densities.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>densities</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
         <expression-string>ac1, vpred1 = self._act(stochastic, ob)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
@@ -805,41 +826,9 @@
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>tf.concat([conv_input_density, bar_density], axis=-1)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>x = tf.concat([conv_input_density, bar_density], axis=-1)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>plt.imshow(H)</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>import matplotlib.pyplot as plt</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>interp[-1]</expression-string>
-        <language-id>Python</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/running_regimes/Simple_Deformable_Manipulation_Training.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SAC_Experiment_TST.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-900">
@@ -1099,13 +1088,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="604" column="28" selection-start-line="604" selection-start-column="28" selection-end-line="604" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../.PyCharm2018.3/system/python_stubs/155040387/numpy/core/_multiarray_umath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1120,13 +1102,6 @@
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/visualize_results.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1170,6 +1145,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/testFlex.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/flex_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="67" column="18" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="606" column="24" selection-start-line="606" selection-start-column="24" selection-end-line="606" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_carving_two_maps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/running_regimes/Granular_Sweep_Training.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -1177,50 +1192,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/testFlex.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/flex_env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="67" column="18" lean-forward="true" selection-start-line="67" selection-start-column="18" selection-end-line="67" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="64" column="58" lean-forward="true" selection-start-line="64" selection-start-column="58" selection-end-line="64" selection-end-column="58" />
+        <state relative-caret-position="191">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-510">
-          <caret line="16" column="12" selection-start-line="16" selection-start-column="12" selection-end-line="16" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_carving_two_maps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="54" lean-forward="true" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_voxel_bar.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="62" column="57" lean-forward="true" selection-start-line="62" selection-start-column="57" selection-end-line="62" selection-end-column="57" />
+        <state relative-caret-position="309">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="388">
+          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="39" column="84" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
         </state>
       </provider>
     </entry>
