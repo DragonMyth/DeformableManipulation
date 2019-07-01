@@ -48,8 +48,7 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
         #                                                                          ac_space=ac_space)
         # return cnn_policy_granular_sweep_voxel_bar.CnnPolicyGranularSweepVoxelBar(name=name, ob_space=ob_space,
 
-        return mlp_policy_flex.MlpPolicyFlex(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=64,
-                                        num_hid_layers=3)
+        return mlp_policy_flex.MlpPolicyFlex(name=name, ob_space=ob_space, ac_space=ac_space)
 
     env = bench.Monitor(env, logger.get_dir() and
                         osp.join(logger.get_dir(), str(rank)))
