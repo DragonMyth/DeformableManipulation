@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="15366b57-bba2-4a95-8c54-0a4dbae9f6ad" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py" beforeDir="false" afterPath="$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/DeformableManipulation$vis2dgaussian.coverage" NAME="vis2dgaussian Coverage Results" MODIFIED="1555548253892" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$Simple_Deformable_Manipulation_Conv_Training.coverage" NAME="Simple_Deformable_Manipulation_Conv_Training Coverage Results" MODIFIED="1557689922917" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running_regimes" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$granular_sweep_voxel_bar_env.coverage" NAME="granular_sweep_voxel_bar_env Coverage Results" MODIFIED="1561008266136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$plotResult.coverage" NAME="plotResult Coverage Results" MODIFIED="1554996815818" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Util" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$Simple_Deformable_Manipulation_Training.coverage" NAME="Simple_Deformable_Manipulation_Training Coverage Results" MODIFIED="1550526009061" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running_regimes" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$spinningUpDart.coverage" NAME="spinningUpDart Coverage Results" MODIFIED="1550095250426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$granular_sweep_env.coverage" NAME="granular_sweep_env Coverage Results" MODIFIED="1559163830278" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$Granular_Sweep_Training.coverage" NAME="Granular_Sweep_Training Coverage Results" MODIFIED="1560011894359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/running_regimes" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$run_atari.coverage" NAME="run_atari Coverage Results" MODIFIED="1551121741172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../baselines/baselines/ppo1" />
+    <SUITE FILE_PATH="coverage/DeformableManipulation$visualize_results.coverage" NAME="visualize_results Coverage Results" MODIFIED="1561343963952" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_voxel_bar.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="309">
+              <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/running_regimes/Granular_Sweep_Training.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="48" column="76" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_ghost_bar_linear_control_env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="467">
+              <caret line="52" column="99" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="99" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/visualize_results.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_torque_voxel_bar_env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_ghost_bar_env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/flex_env.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="400">
+              <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>1.25</find>
+      <find>pro</find>
+      <find>pos_low</find>
+      <find>.norm</find>
+      <find>kl</find>
+      <find>self.t</find>
+      <find>self.geomCnt</find>
+      <find>first_nonzero</find>
+      <find>multiva</find>
+      <find>assign_old_eq_new</find>
+      <find>tf.</find>
+      <find>sequence_length</find>
+      <find>recurrent</find>
+      <find>rms</find>
+      <find>curr_act</find>
+      <find>fillDensityMap</find>
+      <find>self.curr_act</find>
+      <find>see</find>
+      <find>_seed</find>
+      <find>getPolActivation</find>
+      <find>restore_policy</find>
+      <find>timesteps_per_actorbatch</find>
+      <find>ep_rets</find>
+      <find>prevacs</find>
+      <find>gpu</find>
+      <find>grad</find>
+      <find>prevac</find>
+      <find>traj_segment_generator</find>
+      <find>Flex</find>
+      <find>40</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Simple_Deformable_Manipulation_Automate.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/ppo1/pposgd_mirror_novelty.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/common/mpi_running_mean_std.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/Particle.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/particle_carvinng_rot.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/simple_particle_carving.py" />
+        <option value="$PROJECT_DIR$/Simple_Deformable_Manipulation_rotation_Conv_Automate.py" />
+        <option value="$PROJECT_DIR$/Simple_Deformable_Manipulation_Conv_Automate.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/simpler_path_finding.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/simple_particle_carving_rotation.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/common/distributions.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/ppo1/cnn_policy_carving.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/__init__.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/__init__.py" />
+        <option value="$PROJECT_DIR$/Simple_Deformable_Manipulation_circle_template_matching.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/ppo1/cnn_policy_carving_two_maps.py" />
+        <option value="$PROJECT_DIR$/vis2dgaussian.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/ppo1/mlp_policy.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/ppo1/run_humanoid.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/ppo1/pposgd_simple.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/common/tf_util.py" />
+        <option value="$PROJECT_DIR$/running_regimes/Simple_Deformable_Manipulation_Conv_Training.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/ParticlesSim.py" />
+        <option value="$PROJECT_DIR$/../baselines/baselines/ppo1/cnn_policy_carving_explicit_target.py" />
+        <option value="$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/simple_particle_carving_circle_match.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/classic_control/simple_particle_carving.py" />
+        <option value="$PROJECT_DIR$/SAC_Experiment_TST.py" />
+        <option value="$PROJECT_DIR$/Util/plot_particle_trajectories.py" />
+        <option value="$PROJECT_DIR$/flex_trajectory_vis.ipynb" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/classic_control/ParticlesSim.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/classic_control/simple_particle_carving_circle_match.py" />
+        <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py" />
+        <option value="$PROJECT_DIR$/Flex_Goo_Sweep_Automate.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/goo_sweep_env.py" />
+        <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_carving_explicit_target.py" />
+        <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep.py" />
+        <option value="$PROJECT_DIR$/Util/plotResult.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/__init__.py" />
+        <option value="$PROJECT_DIR$/Util/post_training_process.py" />
+        <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_explicit_target.py" />
+        <option value="$PROJECT_DIR$/running_regimes/Granular_Sweep_Training.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/__init__.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py" />
+        <option value="$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_voxel_bar.py" />
+        <option value="$PROJECT_DIR$/visualize_results.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/flex_env.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_torque_voxel_bar_env.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_ghost_bar_linear_control_env.py" />
+        <option value="$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py" />
+        <option value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_ghost_bar_env.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="399" />
+    <option name="y" value="32" />
+    <option name="width" value="1177" />
+    <option name="height" value="1018" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="DeformableManipulation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="DeformableManipulation" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="DeformableManipulation" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="trajs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="DeformableManipulation" type="462c0819:PsiDirectoryNode" />
+              <item name="running_regimes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyBaselines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyBaselines" type="462c0819:PsiDirectoryNode" />
+              <item name="baselines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyBaselines" type="462c0819:PsiDirectoryNode" />
+              <item name="baselines" type="462c0819:PsiDirectoryNode" />
+              <item name="ppo1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyBaselines" type="462c0819:PsiDirectoryNode" />
+              <item name="baselines" type="462c0819:PsiDirectoryNode" />
+              <item name="ppo2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="envs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DeformableManipulation" type="47feb1d3:ProjectViewModuleNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="envs" type="462c0819:PsiDirectoryNode" />
+              <item name="flex" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyBaselines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyBaselines" type="462c0819:PsiDirectoryNode" />
+              <item name="baselines" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyBaselines" type="462c0819:PsiDirectoryNode" />
+              <item name="baselines" type="462c0819:PsiDirectoryNode" />
+              <item name="ppo1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="envs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="envs" type="462c0819:PsiDirectoryNode" />
+              <item name="classic_control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DeformableManipulation" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; Python 3.6 (deformableManip) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="MyDartEnv" type="462c0819:PsiDirectoryNode" />
+              <item name="gym" type="462c0819:PsiDirectoryNode" />
+              <item name="envs" type="462c0819:PsiDirectoryNode" />
+              <item name="flex" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../MyBaselines" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../MyBaselines/baselines/ppo1" />
+      <recent name="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/running_regimes" />
+      <recent name="$PROJECT_DIR$/../baselines/baselines/ppo1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/running_regimes" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.granular_sweep_ghost_bar_env">
+    <configuration name="DeformableManipulation" type="JupiterNotebook" factoryName="Jupyter Notebook">
+      <module name="DeformableManipulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="additionalOptions" value="" />
+      <option name="ipnbHost" value="127.0.0.1" />
+      <option name="ipnbPort" value="8888" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="DeformableManipulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="granular_sweep_ghost_bar_env" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeformableManipulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_ghost_bar_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="granular_sweep_torque_voxel_bar_env" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeformableManipulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_torque_voxel_bar_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="granular_sweep_voxel_bar_env" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeformableManipulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plotResult" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeformableManipulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Util" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Util/plotResult.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="visualize_results" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeformableManipulation" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/visualize_results.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Jupyter Notebook.DeformableManipulation" />
+      <item itemvalue="Python.visualize_results" />
+      <item itemvalue="Python.plotResult" />
+      <item itemvalue="Python.granular_sweep_voxel_bar_env" />
+      <item itemvalue="Python.granular_sweep_torque_voxel_bar_env" />
+      <item itemvalue="Python.granular_sweep_ghost_bar_env" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.granular_sweep_ghost_bar_env" />
+        <item itemvalue="Python.visualize_results" />
+        <item itemvalue="Python.granular_sweep_torque_voxel_bar_env" />
+        <item itemvalue="Python.granular_sweep_voxel_bar_env" />
+        <item itemvalue="Python.plotResult" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="15366b57-bba2-4a95-8c54-0a4dbae9f6ad" name="Default Changelist" comment="" />
+      <created>1549828675827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549828675827</updated>
+      <workItem from="1549828676932" duration="1103000" />
+      <workItem from="1549830483752" duration="7619000" />
+      <workItem from="1550088291802" duration="16000" />
+      <workItem from="1550088826245" duration="1158000" />
+      <workItem from="1550090203635" duration="25350000" />
+      <workItem from="1550519633803" duration="7291000" />
+      <workItem from="1550600520904" duration="25499000" />
+      <workItem from="1551109288290" duration="24227000" />
+      <workItem from="1551278806669" duration="6159000" />
+      <workItem from="1551452100358" duration="18203000" />
+      <workItem from="1551790941061" duration="721000" />
+      <workItem from="1551813616154" duration="30878000" />
+      <workItem from="1553629279353" duration="17244000" />
+      <workItem from="1553871151230" duration="59385000" />
+      <workItem from="1554949275185" duration="3969000" />
+      <workItem from="1555532970747" duration="610000" />
+      <workItem from="1555543413674" duration="3461000" />
+      <workItem from="1557077773194" duration="4571000" />
+      <workItem from="1557179748319" duration="5278000" />
+      <workItem from="1557417299789" duration="17518000" />
+      <workItem from="1557944173301" duration="133210000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="393470000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="-4" width="1615" height="1054" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49839228" visible="true" weight="0.31548756" />
+      <window_info id="Structure" order="1" sideWeight="0.5016077" side_tool="true" weight="0.31548756" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32941177" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32901832" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.399137" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32941177" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32941177" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32901832" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.32901832" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32941177" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.83253586" visible="true" weight="0.1179095" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" side_tool="true" />
+      <window_info anchor="right" x="0" y="0" width="358" height="827" id="Documentation" order="6" sideWeight="0.16746412" side_tool="true" visible="true" weight="0.19095477" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/running_regimes/Simple_Deformable_Manipulation_Training.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../baselines/baselines/ppo1/pposgd_simple.py</url>
+          <line>271</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../baselines/baselines/ppo1/run_atari.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/simple_particle_carving_rotation.py</url>
+          <line>144</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/simple_particle_carving_circle_match.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../baselines/baselines/ppo1/pposgd_simple.py</url>
+          <line>89</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../PhysicalSimulation/MyDartEnv/gym/envs/classic_control/simple_particle_carving_circle_match.py</url>
+          <line>136</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Util/plot_particle_trajectories.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py</url>
+          <line>207</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py</url>
+          <line>31</line>
+          <option name="timeStamp" value="82" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="bar_vel.shape" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="breakpointLogExpression">
+      <expression>
+        <expression-string>elif (2 &lt;= self.grid_map[i, j] &lt;= 5):
+
+                    cell.set_color(((self.grid_map[i, j] - 1) / 4.0) ** 0.6, 0, 0)
+
+                elif (6 &lt;= self.grid_map[i, j] &lt;= 9):
+
+                    cell.set_color(((self.grid_map[i, j] - 5) / 4.0) ** 0.6 - 0.05,
+                                   ((self.grid_map[i, j] - 5) / 4.0) ** 0.6 - 0.05,
+                                   ((self.grid_map[i, j] - 5) / 4.0) ** 0.6 - 0.05)
+                elif (self.grid_map[i, j] == -1):
+
+                    cell.set_color(1, 0, 0)
+
+                else:
+                    color = np.zeros(3)
+                    cell.set_color(color[0], color[1], color[2])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>np.sum(densities*goals,axis=1)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>densities*goals</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>goals.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>densities.shape</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>densities</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ac1, vpred1 = self._act(stochastic, ob)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ac1, vpred1 = self._act(stochastic, ob[None])</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ob</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ob[None]</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/dart/dog.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="766">
+          <caret line="55" column="10" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/utils/seeding.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="189" selection-start-line="189" selection-end-line="189" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/plot_learning_from_all_seeds.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex_trajectory_vis.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_novelty.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/classic_control/ParticlesSim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydevd_bundle/pydevd_trace_dispatch_regular.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda3/envs/deformableManip/lib/python3.6/site-packages/tensorflow/python/ops/gradients_impl.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="813">
+          <caret line="551" column="4" selection-start-line="551" selection-start-column="4" selection-end-line="551" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo2/ppo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="52" column="45" selection-start-line="52" selection-start-column="45" selection-end-line="52" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../anaconda3/envs/deformableManip/lib/python3.6/site-packages/tensorflow/python/training/optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="499" column="39" selection-start-line="499" selection-start-column="39" selection-end-line="499" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/common/mpi_adam_optimizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/spaces/box.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/dart/eel_swim_straight.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/dart/dart_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="92" column="51" selection-start-line="92" selection-start-column="51" selection-end-line="92" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running_regimes/Simple_Deformable_Manipulation_Conv_Training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="790">
+          <caret line="77" selection-start-line="77" selection-end-line="77" />
+          <folding>
+            <element signature="e#23#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Simple_Deformable_Manipulation_Automate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-45">
+          <folding>
+            <element signature="e#0#17#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/plot_particle_trajectories.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/monitoring/stats_recorder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.PyCharm2018.3/system/python_stubs/155040387/bindings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/goo_sweep_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flex_Goo_Sweep_Automate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_carving_explicit_target.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="25" column="27" selection-start-line="24" selection-start-column="3" selection-end-line="25" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/common/tf_util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/plotResult.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-554">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/lib/python3.6/site-packages/numpy/linalg/linalg.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="2433" selection-start-line="2433" selection-end-line="2433" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="913" column="54" selection-start-line="913" selection-start-column="54" selection-end-line="913" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/classic_control/simple_particle_carving_rotation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1255" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/classic_control/simple_particle_carving_circle_match.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-120">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="79" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="79" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../.PyCharm2018.3/system/python_stubs/155040387/numpy/core/_multiarray_umath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="195" column="4" selection-start-line="195" selection-start-column="4" selection-end-line="195" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/post_training_process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="39" column="14" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-559">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_explicit_target.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="42" column="23" selection-start-line="42" selection-start-column="23" selection-end-line="42" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/pposgd_simple_flex.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/testFlex.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="606" column="24" selection-start-line="606" selection-start-column="24" selection-end-line="606" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_carving_two_maps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="54" selection-start-line="36" selection-start-column="54" selection-end-line="36" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyBaselines/baselines/ppo1/cnn_policy_granular_sweep_voxel_bar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="62" column="8" selection-start-line="62" selection-start-column="8" selection-end-line="62" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/visualize_results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_torque_voxel_bar_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="142" column="17" selection-start-line="142" selection-start-column="17" selection-end-line="142" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/flex_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="67" column="24" selection-start-line="67" selection-start-column="24" selection-end-line="67" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/running_regimes/Granular_Sweep_Training.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="48" column="76" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_voxel_bar_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_ghost_bar_linear_control_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="52" column="99" selection-start-line="52" selection-start-column="99" selection-end-line="52" selection-end-column="99" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flex_Granular_Sweep_Automate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyDartEnv/gym/envs/flex/granular_sweep_ghost_bar_env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
