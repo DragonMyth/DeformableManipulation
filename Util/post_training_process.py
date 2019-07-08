@@ -23,7 +23,7 @@ from baselines import logger
 
 import tensorflow as tf
 from baselines.ppo1 import mlp_policy, cnn_policy_carving, \
-    cnn_policy_carving_two_maps, cnn_policy_carving_explicit_target,cnn_policy_granular_sweep,cnn_policy_granular_sweep_explicit_target,cnn_policy_granular_sweep_voxel_bar
+    cnn_policy_carving_two_maps, cnn_policy_carving_explicit_target,cnn_policy_granular_sweep,cnn_policy_granular_sweep_explicit_target,cnn_policy_granular_sweep_voxel_bar,mlp_policy_flex
 import baselines.common.tf_util as U
 
 import itertools
@@ -71,6 +71,9 @@ def cnn_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
 def policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
     return mlp_policy.MlpPolicy(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=256,
                                 num_hid_layers=2,
+                                )
+def flex_fc_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+    return mlp_policy_flex.MlpPolicyFlex(name=name, ob_space=ob_space, ac_space=ac_space
                                 )
 
 

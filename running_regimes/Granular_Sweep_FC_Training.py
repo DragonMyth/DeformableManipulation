@@ -126,7 +126,7 @@ if __name__ == '__main__':
 
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v1')
+    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v5')
     parser.add_argument('--seed', help='RNG seed', type=int, default=0)
     parser.add_argument('--data_saving_path', help='Directory for saving the log files for this run')
     parser.add_argument('--batch_size_per_process',
