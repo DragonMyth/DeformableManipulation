@@ -13,7 +13,7 @@ if __name__ == '__main__':
     parser.add_argument('--batch_size_per_process',
                         help='Number of samples collected for each process at each iteration',
                         default=int(num_sample_per_iter))
-    parser.add_argument('--num_iterations', help='Number of iterations need to be run', default=2000)
+    parser.add_argument('--num_iterations', help='Number of iterations need to be run', default=1000)
     args = parser.parse_args()
 
     env_name = args.env
