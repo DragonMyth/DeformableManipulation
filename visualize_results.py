@@ -14,9 +14,9 @@ def render_flex_granular_sweep():
 
     #file_name = "data/trajs/granular_voxel_bar_two_goal.pkl"
     #file_name = "data/trajs/granular_voxel_bar_goal_density.pkl"
-    file_name = "data/trajs/granular_raw_img_2_goal_density_diff.pkl"
+    file_name = "data/trajs/granular_rot_base.pkl"
 
-    render_policy("FlexGranularSweep-v5",stoch=False,record=False,random_policy=False,save_path=True,policy_func=flex_fc_policy_fn,save_filename=file_name)
+    render_policy("FlexGranularSweep-v6",stoch=False,record=False,random_policy=True,save_path=True,policy_func=flex_fc_policy_fn,save_filename=file_name)
 
 def render_flex_granular_torque_sweep():
     # render_policy("FlexGranularSweep-v0",stoch=False,record=False,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_explicit_target_policy_fn,save_filename="data/trajs/curr_1_granular.pkl")

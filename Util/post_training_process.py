@@ -127,7 +127,7 @@ def perform_rollout(policy,
 
                 # action_taken = (np.random.rand(env.unwrapped.act_dim) - 0.5 * np.ones(
                 #     env.unwrapped.act_dim)) * 2
-                action_taken = np.zeros((25, 4))
+                action_taken = np.zeros((25, 5))
                 # action_taken = np.array([0, 0, -1, 0])
 
                 # action_taken = np.array([0, 0, np.random.rand(1)-0.5,np.random.rand(1)-0.5])*2

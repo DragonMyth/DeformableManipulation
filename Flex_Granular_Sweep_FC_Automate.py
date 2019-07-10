@@ -8,12 +8,12 @@ from Util.post_training_process import *
 if __name__ == '__main__':
     num_sample_per_iter = 2000
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v5')
+    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v6')
     parser.add_argument('--seed', help='RNG seed', type=int, default=0)
     parser.add_argument('--batch_size_per_process',
                         help='Number of samples collected for each process at each iteration',
                         default=int(num_sample_per_iter))
-    parser.add_argument('--num_iterations', help='Number of iterations need to be run', default=2000)
+    parser.add_argument('--num_iterations', help='Number of iterations need to be run', default=1000)
     args = parser.parse_args()
 
     env_name = args.env
