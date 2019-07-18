@@ -127,7 +127,7 @@ def perform_rollout(policy,
 
                 # action_taken = (np.random.rand(env.unwrapped.act_dim) - 0.5 * np.ones(
                 #     env.unwrapped.act_dim)) * 2
-                action_taken = np.zeros((25, 5))
+                action_taken = np.zeros((25, 4))
                 # action_taken = np.array([0, 0, -1, 0])
 
                 # action_taken = np.array([0, 0, np.random.rand(1)-0.5,np.random.rand(1)-0.5])*2
@@ -183,7 +183,7 @@ def perform_rollout(policy,
                 cnt += 1
                 plot.plot(iters, data_list[key],
                           label=str(key))
-                plot.yscale('symlog')
+                # plot.yscale('symlog')
 
         plot.xlabel('Time Steps')
         plot.ylabel('Step Reward')
@@ -233,7 +233,7 @@ def render_policy(env_name, save_path=False, save_filename="data/trajs/test_path
                 if not stoch:
                     num_runs = 1
                 for r in range(num_runs):
-                    path = perform_rollout(pi, env, snapshot_dir=snapshot_dir, animate=True, plot_result=False,
+                    path = perform_rollout(pi, env, snapshot_dir=snapshot_dir, animate=True, plot_result=True,
                                            stochastic=stoch,
                                            saved_rollout_path=None,
                                            record=record,
