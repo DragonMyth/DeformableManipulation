@@ -33,7 +33,7 @@ def callback(localv, globalv):
 
 
 def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
-    from baselines.ppo1 import pposgd_simple_flex, cnn_policy_granular_sweep, cnn_policy_granular_sweep_explicit_target,cnn_policy_granular_sweep_voxel_bar
+    from baselines.ppo1 import pposgd_simple_flex,cnn_policy_granular_sweep_voxel_bar
 
     rank = MPI.COMM_WORLD.Get_rank()
 

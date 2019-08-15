@@ -23,7 +23,7 @@ from baselines import logger
 
 import tensorflow as tf
 from baselines.ppo1 import mlp_policy, cnn_policy_carving, \
-    cnn_policy_carving_two_maps, cnn_policy_carving_explicit_target,cnn_policy_granular_sweep,cnn_policy_granular_sweep_explicit_target,cnn_policy_granular_sweep_voxel_bar,mlp_policy_flex
+    cnn_policy_carving_two_maps, cnn_policy_carving_explicit_target,cnn_policy_granular_sweep,cnn_policy_granular_sweep_voxel_bar,mlp_policy_flex
 import baselines.common.tf_util as U
 
 import itertools
@@ -42,10 +42,6 @@ def cnn_granular_sweep_voxel_bar_policy_fn(name, ob_space, ac_space):  # pylint:
     return cnn_policy_granular_sweep_voxel_bar.CnnPolicyGranularSweepVoxelBar(name=name, ob_space=ob_space,
                                                             ac_space=ac_space)
 
-def cnn_granular_sweep_explicit_target_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
-    # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
-    return cnn_policy_granular_sweep_explicit_target.CnnPolicyGranularSweepExplicitTarget(name=name, ob_space=ob_space,
-                                                            ac_space=ac_space)
 
 def cnn_granular_sweep_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
     # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
@@ -107,8 +103,8 @@ def perform_rollout(policy,
             horizon = costum_horizon
         if animate:
             # env.env.env.
-            if hasattr(env.env, 'disableViewer'):
-                env.env.disableViewer = False
+            if hasattr(env.unwrapped, 'disableViewer'):
+                env.unwrapped.disableViewer = False
             if record:
                 env.unwrapped.save_video = True
                 env.unwrapped.video_path = snapshot_dir + '/../policy_runs'
@@ -125,12 +121,7 @@ def perform_rollout(policy,
                 env.render()
             if policy is None:
 
-                # action_taken = (np.random.rand(env.unwrapped.act_dim) - 0.5 * np.ones(
-                #     env.unwrapped.act_dim)) * 2
-                action_taken = np.zeros((25, 4))
-                # action_taken = np.array([0, 0, -1, 0])
-
-                # action_taken = np.array([0, 0, np.random.rand(1)-0.5,np.random.rand(1)-0.5])*2
+                action_taken = np.zeros((env.unwrapped.numInstances, env.unwrapped.act_dim))
             else:
                 if i % control_step_skip == 0:
                     action_taken = policy.act(stochastic, observation)[0]
@@ -243,7 +234,7 @@ def render_policy(env_name, save_path=False, save_filename="data/trajs/test_path
     else:
         env = gym.make(env_name)
 
-        path = perform_rollout(None, env, snapshot_dir='.', animate=True, plot_result=False,
+        path = perform_rollout(None, env, snapshot_dir='.', animate=True, plot_result=True,
                         stochastic=stoch,
                         saved_rollout_path=None,
                         record=False,
