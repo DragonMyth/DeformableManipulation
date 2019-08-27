@@ -6,7 +6,7 @@ import multiprocessing
 from Util.post_training_process import *
 
 if __name__ == '__main__':
-    num_sample_per_iter = 2000*3
+    num_sample_per_iter = 2000
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--name', help='Name of the run', default='experiment')
 

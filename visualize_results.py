@@ -17,10 +17,10 @@ def render_flex_granular_sweep():
 
     #file_name = "data/trajs/granular_rot_base.pkl"
     # file_name = "data/trajs/granular_controllable_ghost_one_goal.pkl"
-    file_name = "data/trajs/granular_controllable_ghost_rand_goal.pkl"
+    file_name = "data/trajs/plastic_spring_material_center_goal.pkl"
     # flex_fc_policy_fn
     # cnn_granular_sweep_voxel_bar_policy_fn
-    render_policy("FlexPlasticReshaping-v1",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_voxel_bar_policy_fn,save_filename=file_name)
+    render_policy("FlexPlasticReshaping-v0",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_voxel_bar_policy_fn,save_filename=file_name)
 
 
 def render_flex_plastic_reshaping():

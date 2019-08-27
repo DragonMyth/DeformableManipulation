@@ -103,6 +103,8 @@ def perform_rollout(policy,
             horizon = costum_horizon
         if animate:
             # env.env.env.
+            from gym.wrappers.monitoring import Monitor
+            env = Monitor(env,snapshot_dir+'/../policy_runs',force=True)
             if hasattr(env.unwrapped, 'disableViewer'):
                 env.unwrapped.disableViewer = False
             if record:
