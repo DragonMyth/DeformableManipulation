@@ -6,3 +6,4 @@ scripts/
 .ipynb_checkpoints/
 .DS_Store
 Util/__pycache__/
+Util/__pycache__/post_training_process.cpython-36.pyc
