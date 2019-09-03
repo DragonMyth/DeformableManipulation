@@ -1,13 +1,6 @@
 from Util.post_training_process import *
 
 
-def render_simple_particle_carving_circle_matching_explicit_circle():
-    # render_policy('SimplerParticleCarving-v2', stoch=True, record=True,
-    #               autoencoder_name_list=[], num_runs=1, random_policy=True)
-    render_policy('SimplerParticleCarving-v2', stoch=False, record=True,
-                  num_runs=1, policy_func=cnn_explicity_target_policy_fn, random_policy=False,save_path=True,save_filename="data/trajs/simple_particle_traj.pkl")
-
-
 def render_flex_granular_sweep():
     # render_policy("FlexGranularSweep-v0",stoch=False,record=False,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_explicit_target_policy_fn,save_filename="data/trajs/curr_1_granular.pkl")
     # render_policy("FlexGranularSweep-v0",stoch=False,record=False,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_policy_fn,save_filename="data/trajs/no_target_granular.pkl")
@@ -19,7 +12,7 @@ def render_flex_granular_sweep():
     file_name = "data/trajs/plastic_spring_material_center_goal.pkl"
     # flex_fc_policy_fn
     # cnn_granular_sweep_voxel_bar_policy_fn
-    render_policy("FlexPlasticReshaping-v0",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_granular_sweep_voxel_bar_policy_fn,save_filename=file_name)
+    render_policy("FlexPlasticReshaping-v2",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_particle_sweep_policy_fn,save_filename=file_name)
 
 
 def render_flex_plastic_reshaping():
