@@ -111,12 +111,7 @@ def perform_rollout(policy,
                 env.render()
             if policy is None:
 
-                # action_taken = (np.random.rand(env.unwrapped.act_dim) - 0.5 * np.ones(
-                #     env.unwrapped.act_dim)) * 2
                 action_taken = np.zeros((env.unwrapped.numInstances, env.unwrapped.act_dim))
-                # action_taken = np.array([0, 0, -1, 0])
-
-                # action_taken = np.array([0, 0, np.random.rand(1)-0.5,np.random.rand(1)-0.5])*2
             else:
                 if i % control_step_skip == 0:
                     action_taken = policy.act(stochastic, observation)[0]
@@ -169,7 +164,7 @@ def perform_rollout(policy,
                 cnt += 1
                 plot.plot(iters, data_list[key],
                           label=str(key))
-                plot.yscale('symlog')
+                # plot.yscale('symlog')
 
         plot.xlabel('Time Steps')
         plot.ylabel('Step Reward')

@@ -7,6 +7,7 @@ def render_flex_granular_sweep():
 
     #file_name = "data/trajs/granular_voxel_bar_two_goal.pkl"
     #file_name = "data/trajs/granular_voxel_bar_goal_density.pkl"
+
     #file_name = "data/trajs/granular_rot_base.pkl"
     # file_name = "data/trajs/granular_controllable_ghost_one_goal.pkl"
     file_name = "data/trajs/plastic_spring_material_center_goal.pkl"
