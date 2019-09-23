@@ -47,25 +47,37 @@ def plot_progress():
     indices = [i for i, x in enumerate(EpisodesSofar) if x == 0]
 
     AverageReturns = np.array(data_lookup[category_idx_lookup['EpRewMean']])
+    loss_kl = np.array(data_lookup[category_idx_lookup['loss_kl']])
     # TaskGradientMag = np.array(data_lookup[category_idx_lookup['TaskGradMag']])
     # NoveltyGradientMag = np.array(data_lookup[category_idx_lookup['NoveltyGradMag']])
     # MaxReturns = data_lookup[category_idx_lookup['MaxReturn']]
     # MinReturns = data_lookup[category_idx_lookup['MinReturn']]
-    fig, axs = plot.subplots(1, 1)
+    fig, axs = plot.subplots(2, 1)
     # plot.figure()
     # print(AverageReturns)
-    axs.plot(ItersSofar, AverageReturns, 'r', label='Average Return')
+    axs[0].plot(ItersSofar, AverageReturns, 'r', label='Average Return')
 
     # plot.plot(Iterations[begin:end], MinReturns[begin:end], 'g', label='Minimum Return')
     # plot.plot(Iterations[begin:end], MaxReturns[begin:end], 'b', label='Maximum Return')
-    axs.set_xlabel('Iterations')
-    axs.set_ylabel('Expected Return')
+    axs[0].set_xlabel('Iterations')
+    axs[0].set_ylabel('Expected Return')
     # plot.title('Mirror Enforcement Larger Loss')
     # plot.yscale('symlog')
-    axs.legend()
-    axs.set_yscale('linear')
-    axs.set_xscale('linear')
+    axs[0].legend()
+    axs[0].set_yscale('linear')
+    axs[0].set_xscale('linear')
 
+    axs[1].plot(ItersSofar, loss_kl, 'b', label='KL Loss')
+
+    # plot.plot(Iterations[begin:end], MinReturns[begin:end], 'g', label='Minimum Return')
+    # plot.plot(Iterations[begin:end], MaxReturns[begin:end], 'b', label='Maximum Return')
+    axs[1].set_xlabel('Iterations')
+    axs[1].set_ylabel('KL Loss')
+    # plot.title('Mirror Enforcement Larger Loss')
+    # plot.yscale('symlog')
+    axs[1].legend()
+    axs[1].set_yscale('linear')
+    axs[1].set_xscale('linear')
     # plot.savefig(snapshot_dir + '/TaskReturnTrainingCurve' + '.jpg')
     # plot.show()
     #
@@ -78,6 +90,8 @@ def plot_progress():
     plot.savefig(snapshot_dir + '/ReturnTrainingCurve' + '.jpg')
 
     plot.show()
+
+
 
 def plot_gradient():
     task_gradients = gradient_info['task_gradients']
@@ -136,4 +150,5 @@ def plot_gradient():
 
 plot_progress()
 # plot_gradient()
+
 
