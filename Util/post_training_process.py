@@ -23,7 +23,7 @@ from baselines import logger
 
 import tensorflow as tf
 from baselines.ppo1 import mlp_policy, cnn_policy_carving, \
-    cnn_policy_carving_two_maps,cnn_policy_particle_sweep,mlp_policy_flex
+    cnn_policy_carving_two_maps,cnn_policy_particle_sweep,mlp_policy_flex,cnn_policy_particle_sweep_mult_density
 import baselines.common.tf_util as U
 
 import itertools
@@ -36,7 +36,11 @@ import seaborn as sns
 #     return mlp_policy_novelty.MlpPolicyNovelty(name=name, ob_space=ob_space, ac_space=ac_space, hid_size=64,
 #                                                num_hid_layers=3,
 
-#                                                )
+def cnn_particle_sweep_multi_img_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
+    # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
+    return cnn_policy_particle_sweep_mult_density.CnnPolicyParticleSweepMultiDensity(name=name, ob_space=ob_space,
+                                                                    ac_space=ac_space)
+#                                  )
 def cnn_particle_sweep_policy_fn(name, ob_space, ac_space):  # pylint: disable=W0613
     # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
     return cnn_policy_particle_sweep.CnnPolicyParticleSweep(name=name, ob_space=ob_space,
