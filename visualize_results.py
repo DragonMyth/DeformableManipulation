@@ -13,7 +13,7 @@ def render_flex_granular_sweep():
     file_name = "data/trajs/plastic_spring_material_center_goal.pkl"
     # flex_fc_policy_fn
     # cnn_granular_sweep_voxel_bar_policy_fn
-    render_policy("FlexPlasticReshaping-v0",stoch=True,record=True,random_policy=False,save_path=True,policy_func=cnn_particle_sweep_multi_img_policy_fn,save_filename=file_name)
+    render_policy("FlexPlasticReshaping-v5",stoch=True,record=True,random_policy=True,save_path=True,policy_func=cnn_particle_sweep_multi_img_policy_fn,save_filename=file_name)
 
 
 def render_flex_plastic_reshaping():

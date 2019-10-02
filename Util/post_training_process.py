@@ -107,7 +107,7 @@ def perform_rollout(policy,
                     os.makedirs(env.unwrapped.video_path)
 
         observation = env.reset()
-
+        rwd = 0
         for i in range(horizon):
             if i % 200 == 0 and debug:
                 print("Current Timestep:", i)
@@ -135,6 +135,7 @@ def perform_rollout(policy,
             # observation, reward, done, info = env.step(np.array([-1, 0]))
 
             reward = reward[0] if type(reward) == tuple else reward
+            rwd+=reward
             path['observations'].append(observation)
             path['actions'].append(action_taken)
             all_reward_info.append(info)
@@ -142,7 +143,7 @@ def perform_rollout(policy,
             if done:
                 # print("Rollout is Done")
                 break
-
+        print("Total Reward is: ",rwd)            
     if plot_result:
         iters = np.arange(1, len(all_reward_info) + 1, 1)
         data_list = {}
