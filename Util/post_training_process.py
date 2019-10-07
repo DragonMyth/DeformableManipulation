@@ -111,8 +111,8 @@ def perform_rollout(policy,
         for i in range(horizon):
             if i % 200 == 0 and debug:
                 print("Current Timestep:", i)
-            if animate:
-                env.render()
+            # if animate:
+            #     env.render()
             if policy is None:
 
                 action_taken = np.zeros((env.unwrapped.numInstances, env.unwrapped.act_dim))
