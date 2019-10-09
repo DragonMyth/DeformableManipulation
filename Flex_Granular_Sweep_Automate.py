@@ -6,11 +6,11 @@ import multiprocessing
 from Util.post_training_process import *
 
 if __name__ == '__main__':
-    num_sample_per_iter = 2000
+    num_sample_per_iter = 1000
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--name', help='Name of the run', default='experiment')
 
-    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v1')
+    parser.add_argument('--env', help='environment ID', default='FlexGranularSweep-v4')
     parser.add_argument('--seed', help='RNG seed', type=int, default=0)
     parser.add_argument('--batch_size_per_process',
                         help='Number of samples collected for each process at each iteration',
@@ -34,7 +34,7 @@ if __name__ == '__main__':
         data_saving_path = 'data/local/' + str(st) + '_' + run_name + '_seed_' + str(
             seed) + '/ppo_' + env_name
         train_policy = subprocess.call(
-            'OMP_NUM_THREADS="1" python ./running_regimes/Granular_Sweep_Training.py'
+            'python ./running_regimes/Granular_Sweep_Training.py'
             + ' --env ' + args.env
             + ' --seed ' + str(seed)
             + ' --data_saving_path ' + str(data_saving_path + '/policy')

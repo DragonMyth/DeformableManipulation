@@ -6,7 +6,7 @@ import multiprocessing
 from Util.post_training_process import *
 
 if __name__ == '__main__':
-    num_sample_per_iter = 3000
+    num_sample_per_iter = 1000
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--name', help='Name of the run', default='experiment')
 
@@ -34,7 +34,7 @@ if __name__ == '__main__':
         data_saving_path = 'data/local/' + str(st) + '_' + run_name + '_seed_' + str(
             seed) + '/ppo_' + env_name
         train_policy = subprocess.call(
-            'OMP_NUM_THREADS="1" python ./running_regimes/Granular_Sweep_Training.py'
+            'python ./running_regimes/Granular_Sweep_Training.py'
             + ' --env ' + args.env
             + ' --seed ' + str(seed)
             + ' --data_saving_path ' + str(data_saving_path + '/policy')
