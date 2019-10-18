@@ -13,7 +13,9 @@ def render_flex_granular_sweep():
     file_name = "data/trajs/plastic_spring_material_center_goal.pkl"
     # flex_fc_policy_fn
     # cnn_granular_sweep_voxel_bar_policy_fn
-    render_policy("FlexGranularSweep-v4",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_particle_sweep_multi_img_policy_fn,save_filename=file_name)
+    # ppo_FlexGranularSweep - v4
+    # FlexPlasticReshaping - v6
+    render_policy("FlexPlasticReshaping-v6",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_particle_sweep_multi_img_policy_fn,save_filename=file_name)
 
 
 def render_flex_plastic_reshaping():

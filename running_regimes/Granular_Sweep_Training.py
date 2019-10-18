@@ -91,7 +91,7 @@ def main(env_name, seed, data_saving_path, batch_size_per_process, num_iteration
             logger.configure(data_saving_path)
 
             model = train(sess, env_name,
-                          num_timesteps=num_iterations_enforce * num_processes * num_timesteps_per_process*25,
+                          num_timesteps=num_iterations_enforce * num_processes * num_timesteps_per_process*100,
                           timesteps_per_actor=num_timesteps_per_process,
                           seed=seed, policy_param=None)
 
