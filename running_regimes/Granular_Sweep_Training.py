@@ -66,7 +66,7 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
                                 session=sess,
                                 gap=5,
                                 restore=None,  # [sess, policy_param]
-                                kl_threshold = 0.4,
+                                kl_threshold = 0.003,
                                 )
 
     env.close()
