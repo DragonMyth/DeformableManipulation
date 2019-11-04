@@ -15,7 +15,7 @@ def render_flex_granular_sweep():
     # cnn_granular_sweep_voxel_bar_policy_fn
     # ppo_FlexGranularSweep - v4
     # FlexPlasticReshaping - v6
-    render_policy("FlexPlasticReshaping-v6",stoch=True,record=True,random_policy=False,save_path=False,policy_func=cnn_particle_sweep_multi_img_policy_fn,save_filename=file_name)
+    render_policy("FlexPlasticReshaping-v6",stoch=True,record=True,random_policy=False,save_path=True,policy_func=cnn_particle_sweep_multi_img_policy_fn,save_filename=file_name)
 
 
 def render_flex_plastic_reshaping():

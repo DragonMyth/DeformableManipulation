@@ -2,8 +2,7 @@ import subprocess
 import datetime
 import time
 import argparse
-import multiprocessing
-from Util.post_training_process import *
+
 
 if __name__ == '__main__':
     num_sample_per_iter = 1000
