@@ -33,7 +33,7 @@ def callback(localv, globalv):
 
 
 def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
-    from baselines.ppo1 import pposgd_simple_flex,cnn_policy_particle_sweep, cnn_policy_particle_sweep_mult_density
+    from baselines.ppo1 import pposgd_simple_flex_share_conv,cnn_policy_particle_sweep, cnn_policy_particle_sweep_mult_density_share_conv
 
     rank = MPI.COMM_WORLD.Get_rank()
 
@@ -46,7 +46,7 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
         # return cnn_policy_carving.CnnPolicyCarving(name=name, ob_space=ob_space, ac_space=ac_space)
         # return cnn_policy_granular_sweep_explicit_target.CnnPolicyGranularSweepExplicitTarget(name=name, ob_space=ob_space,
         #                                                                          ac_space=ac_space)
-        return cnn_policy_particle_sweep_mult_density.CnnPolicyParticleSweepMultiDensity(name=name, ob_space=ob_space,
+        return cnn_policy_particle_sweep_mult_density_share_conv.CnnPolicyParticleSweepMultiDensityShareConv(name=name, ob_space=ob_space,
                                                                         ac_space=ac_space)
 
     env = bench.Monitor(env, logger.get_dir() and
@@ -54,7 +54,7 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
 
     env.seed(seed + rank)
 
-    model = pposgd_simple_flex.learn(env, policy_fn,
+    model = pposgd_simple_flex_share_conv.learn(env, policy_fn,
                                 max_timesteps=num_timesteps,
                                 timesteps_per_actorbatch=timesteps_per_actor,
                                 clip_param=0.2, entcoeff=0,

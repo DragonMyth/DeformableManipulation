@@ -33,7 +33,7 @@ if __name__ == '__main__':
         data_saving_path = 'data/local/' + str(st) + '_' + run_name + '_seed_' + str(
             seed) + '/ppo_' + env_name
         train_policy = subprocess.call(
-            'python ./running_regimes/Granular_Sweep_Training.py'
+            'python ./running_regimes/Granular_Sweep_Training_share_cnn.py'
             + ' --env ' + args.env
             + ' --seed ' + str(seed)
             + ' --data_saving_path ' + str(data_saving_path + '/policy')
