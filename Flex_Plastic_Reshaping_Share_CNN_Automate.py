@@ -6,10 +6,12 @@ import argparse
 
 if __name__ == '__main__':
     num_sample_per_iter = 1000
+    # num_sample_per_iter = 3000
+
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     parser.add_argument('--name', help='Name of the run', default='experiment')
 
-    parser.add_argument('--env', help='environment ID', default='FlexPlasticReshaping-v5')
+    parser.add_argument('--env', help='environment ID', default='FlexPlasticReshaping-v6')
     parser.add_argument('--seed', help='RNG seed', type=int, default=0)
     parser.add_argument('--batch_size_per_process',
                         help='Number of samples collected for each process at each iteration',
