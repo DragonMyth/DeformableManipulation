@@ -7,3 +7,4 @@ scripts/
 .DS_Store
 Util/__pycache__/
 Util/__pycache__/post_training_process.cpython-36.pyc
+manual_control_data/
