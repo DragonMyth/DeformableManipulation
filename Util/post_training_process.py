@@ -90,7 +90,7 @@ def perform_rollout(policy,
     env.seed(42)
     for _ in range(num_repeat):
 
-        path = {'observations': [], 'actions': []}
+        path = {'observations': [], 'actions': [], 'states':[]}
         last_action = None
 
         horizon = env._max_episode_steps
@@ -141,6 +141,7 @@ def perform_rollout(policy,
             rwd+=reward
             path['observations'].append(observation)
             path['actions'].append(action_taken)
+            path['states'].append(env.unwrapped.get_state())
             all_reward_info.append(info)
 
             if done:
