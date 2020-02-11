@@ -17,7 +17,7 @@ def render_flex_granular_sweep():
     # FlexPlasticReshaping - v6
     # render_policy("FlexPlasticReshaping-v3",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_cnn_particle_sweep_multi_img_policy_share_val_fn,save_filename=file_name)
     # render_policy("FlexPlasticReshaping-v7",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_cnn_particle_sweep_multi_img_policy_share_val_fn,save_filename=file_name)
-    render_policy("FlexPlasticReshaping-v0",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_cnn_particle_sweep_multi_img_policy_share_val_fn,save_filename=file_name)
+    render_policy("FlexPlasticReshaping-v1",stoch=False,record=True,random_policy=False,save_path=True,policy_func=cnn_cnn_particle_sweep_multi_img_policy_share_val_fn,save_filename=file_name)
 
 
 def render_flex_plastic_reshaping():
