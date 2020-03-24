@@ -88,6 +88,7 @@ def perform_rollout(policy,
     # print(predefined_actions)
     all_reward_info = []
     env.seed(42)
+    env.reset()
     for _ in range(num_repeat):
 
         path = {'observations': [], 'actions': [], 'states':[]}
@@ -197,7 +198,6 @@ def render_policy(env_name, save_path=False, save_filename="data/trajs/test_path
         root.update()
 
         env = gym.make(env_name)
-
         for i in range(len(filenames)):
             filename = filenames[i]
             print(filename)

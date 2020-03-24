@@ -48,12 +48,11 @@ def train(sess, env_id, num_timesteps, timesteps_per_actor, seed, policy_param):
         #                                                                          ac_space=ac_space)
         return cnn_policy_particle_sweep_mult_density_share_conv.CnnPolicyParticleSweepMultiDensityShareConv(name=name, ob_space=ob_space,
                                                                         ac_space=ac_space)
-
+    env.reset()
     env = bench.Monitor(env, logger.get_dir() and
                         osp.join(logger.get_dir(), str(rank)))
 
     env.seed(seed + rank)
-
     model = pposgd_simple_flex_share_conv.learn(env, policy_fn,
                                 max_timesteps=num_timesteps,
                                 timesteps_per_actorbatch=timesteps_per_actor,
@@ -103,7 +102,6 @@ def main(env_name, seed, data_saving_path, batch_size_per_process, num_iteration
             # env = wrappers.Monitor(env, logger.get_dir() + '/../results', force=True)
 
             obs = env.reset()
-
             step = 0
             while (True):
 
